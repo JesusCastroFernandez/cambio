@@ -1,1 +1,32 @@
+import java.util.Scanner;
 
+public class ConversionUnidades {
+    public static void main(String[] args) {
+        // Crear un objeto Scanner para leer datos desde la entrada estándar
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar al usuario que ingrese una longitud en metros
+        System.out.print("Ingresa una longitud en metros: ");
+        double metros = scanner.nextDouble();
+
+        // Realizar la conversión a decímetros, centímetros y milímetros
+        double decimetros = metros * 10;
+        double centimetros = metros * 100;
+        double milimetros = metros * 1000;
+
+        // Imprimir la longitud en decímetros, centímetros y milímetros
+        System.out.println("La longitud en decímetros es: " + decimetros);
+        System.out.println("La longitud en centímetros es: " + centimetros);
+        System.out.println("La longitud en milímetros es: " + milimetros);
+
+        // Realizar la conversión a pulgadas, pies y yardas
+        double pulgadas = centimetros / 2.54;
+        double pies = pulgadas / 12;
+        double yardas = pies / 3;
+
+        // Imprimir la longitud en pulgadas, pies y yardas
+        System.out.println("La longitud en pulgadas es: " + pulgadas);
+        System.out.println("La longitud en pies es: " + pies);
+        System.out.println("La longitud en yardas es: " + yardas);
+    }
+}
